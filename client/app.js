@@ -40,7 +40,7 @@ socket.on('turn', function (userTurn) {
 	if (user.isMe(userTurn)) {
 
 		var move = readLineSync.question('Play: ', {defaultInput: 'a1'});
-		socket.emit('played', {user: user.name, move: move});
+		socket.emit('played', {name: user.name, move: move});
 
 	} else {
 		console.log('user '+ userTurn.name + ' is playing');

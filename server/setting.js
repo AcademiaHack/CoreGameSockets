@@ -19,7 +19,7 @@ Setting.prototype.deductShift = function () {
 Setting.prototype.addUser = function (user) {
     if (this.users.length < 2) {
         this.users.push(user);
-        console.log(this.users);
+
         return true;
     }
     return false;

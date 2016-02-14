@@ -23,7 +23,9 @@ Game.prototype.onJoin = function (io, user) {
 Game.prototype.onPlayed = function (io, socket, move) {
     socket.emit('none');
     var shift = this.setting.deductShift();
-    console.log(shift);
+
+    console.log('played: ' + move.name);
+    console.log('shift: ' + shift.name);
 
     io.emit('turn', shift);
 };
