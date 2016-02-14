@@ -17,5 +17,6 @@ Ejecutar el siguiente comando sobre la carpeta del server primero y luego sobre 
     node app
 ```    
 
-##Test
+##GamePlay
 
+![Test](https://raw.githubusercontent.com/HackAcademy/CoreGameSockets/master/gameplay.png "GamePlay")
